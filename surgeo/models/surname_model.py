@@ -14,7 +14,7 @@ class SurnameModel(BaseModel):
 
     Notes
     -----
-    The manner in which the surame data file was created can be found in
+    The manner in which the surname data file was created can be found in
     the "fetch_surnames" Jupyter notebook.
 
     The surname probability dataframe for this model is generated from the

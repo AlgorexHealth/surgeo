@@ -24,11 +24,11 @@ class TestSurnameModel(unittest.TestCase):
         result = self._SURNAME_MODEL.get_probabilities(input_data['name'])
         # Get true result
         true_result = pd.read_csv(
-            self._DATA_FOLDER / 'surname_output.csv',   
+            self._DATA_FOLDER / 'surname_output.csv',
         )
         # Clean for consistency
         result = result.round(4).fillna('')
-        true_result = result.round(4).fillna('')
+        true_result = true_result.round(4).fillna('')
         # Check that all items in the series are equal
         self.assertTrue(
             result.equals(true_result)
